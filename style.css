@@ -1,0 +1,50 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+.text-container {
+display: grid;
+padding: 5%;
+place-items: center;
+font-size: 110%;
+}
+
+.phone-container {
+    height: 100vh;
+    background-color: rgb(214, 24, 71);
+}
+
+.iphone {
+padding-left: 200px;
+display: grid;
+place-items: center;
+width: 501px;
+height: auto;
+}
+
+.subz {
+    padding-top: 50px;
+}
+
+.subz > a {
+    color: gray;
+}
+
+@media screen and (max-width: 1200px) {
+    .phone-container{
+        display: none;
+    }
+
+    .text-container {
+        grid-column: 1 / 3;
+        width: 100%;
+        place-items: center;
+        margin-top: 120px;
+    }
+    .text-container > div > p {
+        max-width: 800px;
+    }
+}
