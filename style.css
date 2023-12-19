@@ -3,6 +3,7 @@ body {
     grid-template-columns: 1fr 1fr;
     margin: 0;
     padding: 0;
+    cursor: url('/peeta.cur'), auto;
 }
 
 .text-container {
